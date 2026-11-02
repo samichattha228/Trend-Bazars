@@ -1,0 +1,827 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "name": "Trend Bazar Admin",
+      "email": "admin@trendbazar.com",
+      "phone": "+91 98765 00000",
+      "role": "admin",
+      "isBlocked": false,
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+      "addresses": [],
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "usr_cust1",
+      "name": "Rahul Sharma",
+      "email": "rahul.sharma@example.com",
+      "phone": "+91 98234 11223",
+      "role": "customer",
+      "isBlocked": false,
+      "addresses": [
+        {
+          "id": "addr_1",
+          "name": "Rahul Sharma",
+          "phone": "+91 98234 11223",
+          "address": "Flat 402, Skyline Residency, Bandra West",
+          "city": "Mumbai",
+          "postalCode": "400050",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2026-03-15T11:20:00.000Z"
+    },
+    {
+      "id": "usr_cust2",
+      "name": "Priya Patel",
+      "email": "priya.patel@example.com",
+      "phone": "+91 97123 44556",
+      "role": "customer",
+      "isBlocked": false,
+      "addresses": [
+        {
+          "id": "addr_2",
+          "name": "Priya Patel",
+          "phone": "+91 97123 44556",
+          "address": "B-12, Green Park Avenue, Navrangpura",
+          "city": "Ahmedabad",
+          "postalCode": "380009",
+          "isDefault": true
+        }
+      ],
+      "createdAt": "2026-04-02T09:15:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_electronics",
+      "name": "Smart Gadgets",
+      "slug": "electronics",
+      "icon": "Smartphone",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80",
+      "featured": true,
+      "productCount": 4
+    },
+    {
+      "id": "cat_audio",
+      "name": "Audio & Sound",
+      "slug": "audio",
+      "icon": "Headphones",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+      "featured": true,
+      "productCount": 3
+    },
+    {
+      "id": "cat_fashion_men",
+      "name": "Men's Fashion",
+      "slug": "mens-fashion",
+      "icon": "Shirt",
+      "image": "https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80",
+      "featured": true,
+      "productCount": 3
+    },
+    {
+      "id": "cat_footwear",
+      "name": "Sneakers & Shoes",
+      "slug": "footwear",
+      "icon": "Footprints",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80",
+      "featured": true,
+      "productCount": 3
+    },
+    {
+      "id": "cat_watches",
+      "name": "Watches & Luxe",
+      "slug": "watches",
+      "icon": "Watch",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80",
+      "featured": true,
+      "productCount": 2
+    },
+    {
+      "id": "cat_home",
+      "name": "Home & Lifestyle",
+      "slug": "home-lifestyle",
+      "icon": "Lamp",
+      "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80",
+      "featured": false,
+      "productCount": 2
+    }
+  ],
+  "products": [
+    {
+      "id": "prd_1",
+      "name": "Pro ANC Wireless Earbuds with Touch Display Case",
+      "slug": "pro-anc-wireless-earbuds",
+      "description": "Ultra-low latency studio audio with 45dB Active Noise Cancellation, Smart LCD touch battery case, and up to 38 hours playback. IPX5 water resistance for workouts.",
+      "categoryId": "cat_audio",
+      "categoryName": "Audio & Sound",
+      "price": 89.99,
+      "discountPrice": 49.99,
+      "sku": "TB-AUD-01",
+      "stock": 23,
+      "rating": 4.8,
+      "reviewsCount": 142,
+      "images": [
+        "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Color",
+          "options": [
+            "Obsidian Black",
+            "Pearl White",
+            "Navy Blue"
+          ]
+        }
+      ],
+      "isFeatured": true,
+      "isTrending": true,
+      "isBestSeller": true,
+      "isNewArrival": false,
+      "isActive": true,
+      "badge": "HOT DEAL 44% OFF",
+      "createdAt": "2026-10-28T13:42:11.824Z"
+    },
+    {
+      "id": "prd_2",
+      "name": "Ultra Slim AMOLED Bluetooth Calling Smartwatch",
+      "slug": "ultra-slim-amoled-smartwatch",
+      "description": "1.96-inch curved AMOLED always-on display, aerospace titanium alloy casing, 120+ sport modes, 24/7 heart & SpO2 monitor with 10 days battery life.",
+      "categoryId": "cat_watches",
+      "categoryName": "Watches & Luxe",
+      "price": 119,
+      "discountPrice": 69.5,
+      "sku": "TB-WTC-02",
+      "stock": 18,
+      "rating": 4.9,
+      "reviewsCount": 88,
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Color",
+          "options": [
+            "Midnight Titanium",
+            "Silver Milanese",
+            "Rose Gold"
+          ]
+        }
+      ],
+      "isFeatured": true,
+      "isTrending": true,
+      "isBestSeller": true,
+      "isNewArrival": true,
+      "isActive": true,
+      "badge": "BESTSELLER",
+      "createdAt": "2026-10-30T13:42:11.825Z"
+    },
+    {
+      "id": "prd_3",
+      "name": "Retro Crimson Running Sports Sneakers",
+      "slug": "retro-crimson-running-sports-sneakers",
+      "description": "Lightweight responsive air-cushion sole engineered for all-day comfort and street appeal. Breathable mesh upper with reinforced TPU heel cage.",
+      "categoryId": "cat_footwear",
+      "categoryName": "Sneakers & Shoes",
+      "price": 135,
+      "discountPrice": 84.99,
+      "sku": "TB-SH-03",
+      "stock": 12,
+      "rating": 4.7,
+      "reviewsCount": 96,
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Size",
+          "options": [
+            "US 8",
+            "US 9",
+            "US 10",
+            "US 11"
+          ]
+        },
+        {
+          "name": "Color",
+          "options": [
+            "Crimson Red / Black",
+            "Triple Black",
+            "Glacier White"
+          ]
+        }
+      ],
+      "isFeatured": true,
+      "isTrending": true,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isActive": true,
+      "badge": "37% OFF",
+      "createdAt": "2026-10-31T13:42:11.825Z"
+    },
+    {
+      "id": "prd_4",
+      "name": "Premium Oversized Heavyweight Cotton Hoodie",
+      "slug": "oversized-heavyweight-hoodie",
+      "description": "450 GSM luxury brushed French terry cotton. Drop shoulder boxy silhouette with double-layered hood and ribbed cuffs. Minimalist street essential.",
+      "categoryId": "cat_fashion_men",
+      "categoryName": "Men's Fashion",
+      "price": 75,
+      "discountPrice": 44.99,
+      "sku": "TB-FAS-04",
+      "stock": 35,
+      "rating": 4.6,
+      "reviewsCount": 64,
+      "images": [
+        "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Size",
+          "options": [
+            "S",
+            "M",
+            "L",
+            "XL"
+          ]
+        },
+        {
+          "name": "Color",
+          "options": [
+            "Slate Charcoal",
+            "Cobalt Blue",
+            "Vintage Oatmeal"
+          ]
+        }
+      ],
+      "isFeatured": true,
+      "isTrending": false,
+      "isBestSeller": true,
+      "isNewArrival": true,
+      "isActive": true,
+      "badge": "TRENDING",
+      "createdAt": "2026-10-26T13:42:11.825Z"
+    },
+    {
+      "id": "prd_5",
+      "name": "Fast 65W GaN Dual USB-C Ultra Compact Wall Charger",
+      "slug": "65w-gan-dual-charger",
+      "description": "Gallium Nitride technology powers your laptop, tablet, and smartphone at high speed in a miniature pocket form factor with over-voltage protection.",
+      "categoryId": "cat_electronics",
+      "categoryName": "Smart Gadgets",
+      "price": 49.99,
+      "discountPrice": 29.99,
+      "sku": "TB-ELC-05",
+      "stock": 45,
+      "rating": 4.9,
+      "reviewsCount": 110,
+      "images": [
+        "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622445262464-84b1456045b6?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Color",
+          "options": [
+            "Matte Black",
+            "Arctic White"
+          ]
+        }
+      ],
+      "isFeatured": false,
+      "isTrending": true,
+      "isBestSeller": true,
+      "isNewArrival": false,
+      "isActive": true,
+      "badge": "TOP ACCESSORY",
+      "createdAt": "2026-10-23T13:42:11.825Z"
+    },
+    {
+      "id": "prd_6",
+      "name": "Acoustic RGB Wireless Portable Bass Speaker",
+      "slug": "acoustic-rgb-wireless-speaker",
+      "description": "360° omnidirectional stereo sound with dual passive radiators and beating beat-synced dynamic RGB lights. 24 hours battery and waterproof.",
+      "categoryId": "cat_audio",
+      "categoryName": "Audio & Sound",
+      "price": 95,
+      "discountPrice": 59.99,
+      "sku": "TB-AUD-06",
+      "stock": 4,
+      "rating": 4.7,
+      "reviewsCount": 78,
+      "images": [
+        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Color",
+          "options": [
+            "Midnight Stealth",
+            "Ocean Blue",
+            "Military Camo"
+          ]
+        }
+      ],
+      "isFeatured": true,
+      "isTrending": true,
+      "isBestSeller": false,
+      "isNewArrival": false,
+      "isActive": true,
+      "badge": "ONLY 4 LEFT!",
+      "createdAt": "2026-10-29T13:42:11.825Z"
+    },
+    {
+      "id": "prd_7",
+      "name": "Minimalist Magnetic Desk Lamp with Wireless Charging Pad",
+      "slug": "magnetic-desk-lamp-charger",
+      "description": "Architectural aluminum alloy LED desk lamp with 3 color temperatures, stepless dimming, and integrated 15W Qi wireless quick-charging base.",
+      "categoryId": "cat_home",
+      "categoryName": "Home & Lifestyle",
+      "price": 69.99,
+      "discountPrice": 39.99,
+      "sku": "TB-HME-07",
+      "stock": 19,
+      "rating": 4.8,
+      "reviewsCount": 42,
+      "images": [
+        "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Finish",
+          "options": [
+            "Space Gray",
+            "Pure White"
+          ]
+        }
+      ],
+      "isFeatured": false,
+      "isTrending": false,
+      "isBestSeller": false,
+      "isNewArrival": true,
+      "isActive": true,
+      "badge": "NEW",
+      "createdAt": "2026-11-01T13:42:11.825Z"
+    },
+    {
+      "id": "prd_8",
+      "name": "Vintage Aviator Polarized UV400 Sunglasses",
+      "slug": "vintage-aviator-sunglasses",
+      "description": "Stainless steel frame with TAC polarized 9-layer anti-glare scratch resistant lenses. Includes magnetic leather travel case.",
+      "categoryId": "cat_watches",
+      "categoryName": "Watches & Luxe",
+      "price": 55,
+      "discountPrice": 32,
+      "sku": "TB-ACC-08",
+      "stock": 28,
+      "rating": 4.8,
+      "reviewsCount": 51,
+      "images": [
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80"
+      ],
+      "variants": [
+        {
+          "name": "Lens",
+          "options": [
+            "Gold / Emerald Green",
+            "Gunmetal / Smoke Black"
+          ]
+        }
+      ],
+      "isFeatured": true,
+      "isTrending": false,
+      "isBestSeller": true,
+      "isNewArrival": false,
+      "isActive": true,
+      "badge": "42% OFF",
+      "createdAt": "2026-10-25T13:42:11.825Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "TB-87500",
+      "orderNumber": "TB-87500",
+      "customerId": null,
+      "customerName": "Test Buyer",
+      "phone": "+919988776655",
+      "email": "test@buyer.com",
+      "city": "Pune",
+      "address": "Koregaon Park Road 5",
+      "postalCode": "411001",
+      "notes": "",
+      "items": [
+        {
+          "productId": "prd_1",
+          "productName": "Pro ANC Wireless Earbuds with Touch Display Case",
+          "price": 49.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+          "sku": "TB-AUD-01"
+        }
+      ],
+      "subtotal": 49.99,
+      "deliveryCharge": 0,
+      "discount": 0,
+      "couponCode": null,
+      "totalAmount": 49.99,
+      "paymentMethod": "COD",
+      "paymentStatus": "Unpaid",
+      "orderStatus": "Pending",
+      "trackingNumber": null,
+      "courier": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "title": "Order Placed (Cash on Delivery)",
+          "timestamp": "2026-11-02T13:42:23.664Z",
+          "description": "Order successfully placed by Test Buyer. Payment of $49.99 due on delivery."
+        }
+      ],
+      "createdAt": "2026-11-02T13:42:23.664Z",
+      "updatedAt": "2026-11-02T13:42:23.664Z"
+    },
+    {
+      "id": "TB-9281",
+      "orderNumber": "TB-9281",
+      "customerId": "usr_cust1",
+      "customerName": "Rahul Sharma",
+      "phone": "+91 98234 11223",
+      "email": "rahul.sharma@example.com",
+      "city": "Mumbai",
+      "address": "Flat 402, Skyline Residency, Bandra West",
+      "postalCode": "400050",
+      "notes": "Please ring bell twice upon arrival.",
+      "items": [
+        {
+          "productId": "prd_1",
+          "productName": "Pro ANC Wireless Earbuds with Touch Display Case",
+          "price": 49.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+          "variant": "Color: Obsidian Black",
+          "sku": "TB-AUD-01"
+        },
+        {
+          "productId": "prd_5",
+          "productName": "Fast 65W GaN Dual USB-C Ultra Compact Wall Charger",
+          "price": 29.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80",
+          "variant": "Color: Matte Black",
+          "sku": "TB-ELC-05"
+        }
+      ],
+      "subtotal": 79.98,
+      "deliveryCharge": 0,
+      "discount": 16,
+      "couponCode": "TREND20",
+      "totalAmount": 63.98,
+      "paymentMethod": "COD",
+      "paymentStatus": "Unpaid",
+      "orderStatus": "Processing",
+      "trackingNumber": "TRK-IN-889104",
+      "courier": "BlueDart Express",
+      "timeline": [
+        {
+          "status": "Pending",
+          "title": "Order Placed",
+          "timestamp": "2026-11-01T19:42:11.825Z",
+          "description": "Customer selected Cash on Delivery."
+        },
+        {
+          "status": "Confirmed",
+          "title": "Order Verified & Confirmed",
+          "timestamp": "2026-11-01T23:42:11.825Z",
+          "description": "Order confirmed by Trend Bazar Fulfillment Team."
+        },
+        {
+          "status": "Processing",
+          "title": "Packaging & Quality Inspection",
+          "timestamp": "2026-11-02T07:42:11.825Z",
+          "description": "Items packed in shock-proof protective box."
+        }
+      ],
+      "createdAt": "2026-11-01T19:42:11.825Z",
+      "updatedAt": "2026-11-02T07:42:11.825Z"
+    },
+    {
+      "id": "TB-9280",
+      "orderNumber": "TB-9280",
+      "customerId": "usr_cust2",
+      "customerName": "Priya Patel",
+      "phone": "+91 97123 44556",
+      "email": "priya.patel@example.com",
+      "city": "Ahmedabad",
+      "address": "B-12, Green Park Avenue, Navrangpura",
+      "postalCode": "380009",
+      "notes": "Call before delivery.",
+      "items": [
+        {
+          "productId": "prd_2",
+          "productName": "Ultra Slim AMOLED Bluetooth Calling Smartwatch",
+          "price": 69.5,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+          "variant": "Color: Midnight Titanium",
+          "sku": "TB-WTC-02"
+        }
+      ],
+      "subtotal": 69.5,
+      "deliveryCharge": 0,
+      "discount": 6.95,
+      "couponCode": "BAZAR10",
+      "totalAmount": 62.55,
+      "paymentMethod": "COD",
+      "paymentStatus": "Paid",
+      "orderStatus": "Delivered",
+      "trackingNumber": "TRK-DEL-551092",
+      "courier": "Delhivery Surface",
+      "timeline": [
+        {
+          "status": "Pending",
+          "title": "Order Placed",
+          "timestamp": "2026-10-31T13:42:11.825Z",
+          "description": "Order received via Trend Bazar Mobile."
+        },
+        {
+          "status": "Confirmed",
+          "title": "Order Confirmed",
+          "timestamp": "2026-10-31T19:42:11.825Z",
+          "description": "Verified stock and COD address."
+        },
+        {
+          "status": "Shipped",
+          "title": "Handed to Courier",
+          "timestamp": "2026-11-01T07:42:11.825Z",
+          "description": "Package dispatched via Delhivery (Awb: TRK-DEL-551092)."
+        },
+        {
+          "status": "Delivered",
+          "title": "Delivered Successfully",
+          "timestamp": "2026-11-02T09:42:11.825Z",
+          "description": "Cash payment of $62.55 collected at doorstep."
+        }
+      ],
+      "createdAt": "2026-10-31T13:42:11.825Z",
+      "updatedAt": "2026-11-02T09:42:11.825Z"
+    },
+    {
+      "id": "TB-9279",
+      "orderNumber": "TB-9279",
+      "customerId": null,
+      "customerName": "Amit Verma",
+      "phone": "+91 91234 98765",
+      "email": "amit.verma@example.com",
+      "city": "New Delhi",
+      "address": "Sector 15, Rohini, House #24",
+      "postalCode": "110085",
+      "items": [
+        {
+          "productId": "prd_3",
+          "productName": "Retro Crimson Running Sports Sneakers",
+          "price": 84.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+          "variant": "Size: US 10 / Color: Crimson Red / Black",
+          "sku": "TB-SH-03"
+        }
+      ],
+      "subtotal": 84.99,
+      "deliveryCharge": 0,
+      "discount": 0,
+      "couponCode": null,
+      "totalAmount": 84.99,
+      "paymentMethod": "COD",
+      "paymentStatus": "Unpaid",
+      "orderStatus": "Shipped",
+      "trackingNumber": "TRK-EXP-992144",
+      "courier": "Shadowfax Express",
+      "timeline": [
+        {
+          "status": "Pending",
+          "title": "Order Placed",
+          "timestamp": "2026-11-01T13:42:11.825Z",
+          "description": "Cash on delivery order created."
+        },
+        {
+          "status": "Confirmed",
+          "title": "Confirmed",
+          "timestamp": "2026-11-01T17:42:11.825Z",
+          "description": "Ready for fulfillment."
+        },
+        {
+          "status": "Shipped",
+          "title": "Out for Dispatch",
+          "timestamp": "2026-11-02T05:42:11.825Z",
+          "description": "Tracking Number: TRK-EXP-992144"
+        }
+      ],
+      "createdAt": "2026-11-01T13:42:11.825Z",
+      "updatedAt": "2026-11-02T05:42:11.825Z"
+    },
+    {
+      "id": "TB-9282",
+      "orderNumber": "TB-9282",
+      "customerId": null,
+      "customerName": "Karan Mehra",
+      "phone": "+91 99887 66554",
+      "email": "karan.m@example.com",
+      "city": "Bengaluru",
+      "address": "Indiranagar 100ft Road, Apt 3A",
+      "postalCode": "560038",
+      "notes": "Please call before delivering.",
+      "items": [
+        {
+          "productId": "prd_4",
+          "productName": "Premium Oversized Heavyweight Cotton Hoodie",
+          "price": 44.99,
+          "quantity": 1,
+          "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+          "variant": "Size: L / Color: Slate Charcoal",
+          "sku": "TB-FAS-04"
+        }
+      ],
+      "subtotal": 44.99,
+      "deliveryCharge": 4.99,
+      "discount": 0,
+      "couponCode": null,
+      "totalAmount": 49.98,
+      "paymentMethod": "COD",
+      "paymentStatus": "Unpaid",
+      "orderStatus": "Pending",
+      "trackingNumber": null,
+      "courier": null,
+      "timeline": [
+        {
+          "status": "Pending",
+          "title": "Order Received",
+          "timestamp": "2026-11-02T13:07:11.825Z",
+          "description": "Order awaits confirmation from admin panel."
+        }
+      ],
+      "createdAt": "2026-11-02T13:07:11.825Z",
+      "updatedAt": "2026-11-02T13:07:11.825Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cpn_1",
+      "code": "TREND20",
+      "discountType": "percentage",
+      "discountValue": 20,
+      "minOrderAmount": 30,
+      "maxDiscount": 50,
+      "expiryDate": "2027-12-31",
+      "usageLimit": 500,
+      "usedCount": 142,
+      "isActive": true
+    },
+    {
+      "id": "cpn_2",
+      "code": "BAZAR10",
+      "discountType": "percentage",
+      "discountValue": 10,
+      "minOrderAmount": 20,
+      "expiryDate": "2027-12-31",
+      "usageLimit": 1000,
+      "usedCount": 284,
+      "isActive": true
+    },
+    {
+      "id": "cpn_3",
+      "code": "FREESHIP",
+      "discountType": "fixed",
+      "discountValue": 4.99,
+      "minOrderAmount": 25,
+      "expiryDate": "2027-12-31",
+      "usageLimit": 200,
+      "usedCount": 89,
+      "isActive": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_1",
+      "productId": "prd_1",
+      "userName": "Vikram S.",
+      "rating": 5,
+      "comment": "The touch screen display on the charging case is next level! Sound quality is punchy with great bass and ANC blocks metro noise effortlessly.",
+      "verifiedPurchase": true,
+      "createdAt": "2026-10-24T14:30:00.000Z"
+    },
+    {
+      "id": "rev_2",
+      "productId": "prd_1",
+      "userName": "Sneha R.",
+      "rating": 5,
+      "comment": "Super fast delivery in Mumbai within 48 hours. Cash on delivery was seamless. Product is 100% genuine.",
+      "verifiedPurchase": true,
+      "createdAt": "2026-10-26T18:10:00.000Z"
+    },
+    {
+      "id": "rev_3",
+      "productId": "prd_2",
+      "userName": "Arjun N.",
+      "rating": 5,
+      "comment": "AMOLED display is crystal clear even in direct sunlight. Bluetooth calling is loud and clear. Great battery life too.",
+      "verifiedPurchase": true,
+      "createdAt": "2026-10-28T09:45:00.000Z"
+    },
+    {
+      "id": "rev_4",
+      "productId": "prd_3",
+      "userName": "Devendra K.",
+      "rating": 4,
+      "comment": "Very comfortable sole for morning running and workouts. Color is vibrant red.",
+      "verifiedPurchase": true,
+      "createdAt": "2026-10-30T16:20:00.000Z"
+    }
+  ],
+  "inventoryLogs": [
+    {
+      "id": "inv_1793626943664_678",
+      "productId": "prd_1",
+      "productName": "Pro ANC Wireless Earbuds with Touch Display Case",
+      "change": -1,
+      "type": "order_deduction",
+      "notes": "Order created: deducted 1 units",
+      "timestamp": "2026-11-02T13:42:23.664Z"
+    },
+    {
+      "id": "inv_1",
+      "productId": "prd_1",
+      "productName": "Pro ANC Wireless Earbuds",
+      "change": 50,
+      "type": "restock",
+      "notes": "Initial container arrival",
+      "timestamp": "2026-10-23T13:42:11.825Z"
+    },
+    {
+      "id": "inv_2",
+      "productId": "prd_1",
+      "productName": "Pro ANC Wireless Earbuds",
+      "change": -1,
+      "type": "order_deduction",
+      "notes": "Order TB-9281 fulfillment",
+      "timestamp": "2026-11-01T19:42:11.825Z"
+    }
+  ],
+  "settings": {
+    "storeName": "TREND BAZAR",
+    "tagline": "Your Premier Mobile & Online Shopping Destination",
+    "logoText": "TREND BAZAR",
+    "logoUrl": "",
+    "supportPhone": "+91 98765 43210",
+    "whatsappNumber": "919876543210",
+    "supportEmail": "support@trendbazar.com",
+    "announcementText": "🔥 MEGA FESTIVAL SALE: Extra 20% OFF using code TREND20 | Free Cash on Delivery on orders over $49!",
+    "currencySymbol": "$",
+    "standardDeliveryCharge": 4.99,
+    "freeDeliveryThreshold": 49,
+    "banners": [
+      {
+        "id": "ban_1",
+        "title": "Mega Season Super Sale",
+        "subtitle": "Flat 50% - 70% Off on Latest Streetwear & Gadgets",
+        "badge": "LIMITED TIME DEAL",
+        "ctaText": "Shop Trending Now",
+        "link": "/category/electronics",
+        "imageUrl": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1200&q=80",
+        "bgColor": "from-blue-700 via-indigo-600 to-blue-900"
+      },
+      {
+        "id": "ban_2",
+        "title": "Next-Gen Wireless Audio",
+        "subtitle": "Immersive sound with Active Noise Cancellation",
+        "badge": "NEW ARRIVAL",
+        "ctaText": "Explore Audio",
+        "link": "/category/audio",
+        "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
+        "bgColor": "from-cyan-700 via-blue-600 to-indigo-800"
+      },
+      {
+        "id": "ban_3",
+        "title": "Premium Sneakers & Kicks",
+        "subtitle": "Step up your street style with iconic footwear",
+        "badge": "HOT TREND",
+        "ctaText": "Get Sneakers",
+        "link": "/category/footwear",
+        "imageUrl": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80",
+        "bgColor": "from-blue-900 via-sky-700 to-slate-900"
+      }
+    ],
+    "socialLinks": {
+      "instagram": "https://instagram.com/trendbazar",
+      "facebook": "https://facebook.com/trendbazar",
+      "twitter": "https://twitter.com/trendbazar",
+      "youtube": "https://youtube.com/@trendbazar"
+    }
+  }
+}

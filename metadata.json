@@ -1,0 +1,6 @@
+{
+  "name": "TREND BAZAR - Responsive E-Commerce & Admin Platform",
+  "description": "Professional e-commerce platform with a mobile-first customer shopping experience and a desktop-first business management admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
